@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&display=swap');
+
+*{
+    box-sizing: border-box;
+    font-family: 'Playfair Display', serif;
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0;
+    background-color: lightgray;
+    color: black;
+}
+
+h1{
+    font-size: clamp(1.5rem, 5vw, 5rem);
+    position:relative;
+    overflow: hidden;
+    text-align: center;
+    width: 300px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
+h1::after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: white;
+    border-top: 2px solid black;
+    animation: titre 1.3s ease-out forwards;
+}
+
+@keyframes titre {
+    100%{
+        transform: translateY(100%);
+    }
+}
+
+h2{
+    margin:0;
+    margin-left: 10%;
+    font-size: clamp(1.2rem, 3vw, 4rem);
+}
+
+h3{
+    font-size: 1.5rem;
+    margin-left: 25%;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    transition: 1s;
+    border: 2px;
+    text-decoration: underline;
+}
+.flexbox{
+    border-bottom: 2px solid black;
+    background: rgb(172, 172, 172);
+    border-color: black;
+    width: 100%;
+    height: clamp(20px, 10vh, 100px);
+    margin: 0 auto;
+}
+
+.flexbox ul{
+    font-size:clamp(0.5rem, 2.2vw, 3rem);
+    display: flex;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    box-shadow: 0px 5px 3px;
+}
+.flexbox li{
+    list-style: none;
+    width: 100%;
+    margin: 10px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+#logo{
+    font-size:clamp(0.8rem, 2vw, 4rem);
+    font-weight: bold;
+}
+
+.Brands{
+    width: 100%;
+    height: 90%;
+}
+
+.Brands ul{
+    margin: 0 auto;
+    padding: 0;
+    margin-left: 20%;
+    margin-right: 20%;
+    padding-bottom: 20px;
+    display: grid;
+    border-bottom: 2px solid black;
+    grid-template-columns: repeat(2, 1fr);
+}
+.Brands li{
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    list-style:none;
+    text-align: center;
+    font-size: clamp(1rem, 2vw, 4rem);
+}
+
+.Brands li::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: translateX(-100%);
+}
+
+.Brands li:nth-child(even)::after{
+    background-color: rgb(172, 172, 172);
+    animation: slideIn 0.5s ease-out forwards,
+    slideOut 0.5s ease-out 0.5s forwards;
+}
+
+.Brands li:nth-child(odd)::after{
+    background-color: hsl(0, 0%, 31%);
+    animation: slideIn 0.5s ease-out 0.3s forwards,
+    slideOut 0.5s ease-out 0.8s forwards;
+}
+
+.Brands li:hover{
+    text-decoration: underline;
+    transition: 1s;
+}
+
+.Brands li:nth-child(even){
+    color: black;
+    color: transparent;
+    animation: apparition 0s 0.5s linear forwards;
+}
+
+.Brands li:nth-child(odd){
+    color: black;
+    color: transparent;
+    animation: apparition 0s 0.8s 1 linear forwards;
+}
+
+
+@keyframes apparition {
+    100%{
+        color: black;
+    }
+}
+
+@keyframes slideIn {
+    100%{
+        transform: translateX(0%);
+    }
+}
+
+@keyframes slideOut {
+    100%{
+        transform: translateX(101%);
+    }
+}
+ol{
+    padding: 0;
+    margin-left: 20%;
+    margin-right: 20%;
+    padding-left:5%;
+    padding-right:5%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid black;
+}
+
+.Groups{
+    width: 100%;
+    height: 90%;
+}
+
+.Groups ul{
+    margin:0;
+    display: grid;
+    justify-items:start;
+    border-bottom: 2px solid black;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.Groups li{
+    margin-left: 20%;
+    list-style:circle;
+    text-align: center;
+    font-size: clamp(0.8rem, 2vw, 1.2rem);
+}
+
+footer{
+    margin: 0;
+    height: 100px;
+    width:100%;
+    background: black;
+    color: white;
+    position: relative;
+    bottom: 0;
+    text-align: right;
+}
+p#end{
+    position: relative;
+    top: 16px;
+    margin-right: 15px;
+}
+
+
+
+@media (min-width:1025px) {
+    h1{
+        width: 500px;
+    }
+}
+
+.flexbox li:nth-child(even){
+    display: none;
+}
+@media (max-width:370px){
+    .flexbox li:nth-child(odd){
+        display: none;
+    }
+    .flexbox li:nth-child(even){
+        display: flex;
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width:700px) {
+    .Brands ul{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
