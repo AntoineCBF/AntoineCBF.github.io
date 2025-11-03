@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&display=swap');
 
 *{
@@ -379,4 +380,387 @@ p.description{
         display: flex;
         font-size: 1.5rem;
     }
+=======
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&display=swap');
+
+*{
+    font-family: 'Playfair Display', serif;
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0;
+    color: black;
+    background-color: lightgray;
+}
+.title{
+    overflow: hidden;
+}
+h1{
+    text-align: center;
+    font-size: clamp(1rem, 2.5vw, 4rem);
+    transform: translateX(100%);
+    animation: slideRight 800ms ease 0s 1 normal forwards;
+}
+#begin{
+    text-align: center;
+    font-size:clamp(0.8rem, 2.5vw, 4rem);
+    transform: translateX(100%);
+    animation: slideRight 800ms ease 0.2s 1 normal forwards;
+}
+a{
+    text-decoration: none;
+    color: black;
+    transition: transform 1s;
+}
+a:hover{
+    border: 2px;
+    text-decoration: underline;
+    cursor:pointer;
+}
+.flexbox{
+    border-bottom: 2px solid black;
+    background: rgb(172, 172, 172);
+    border-color: black;
+    width: 100%;
+    height: clamp(20px, 10vh, 100px);
+    margin: 0 auto;
+}
+
+.flexbox ul{
+    font-size:clamp(0.5rem, 2.2vw, 3rem);
+    display: flex;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    box-shadow: 0px 5px 3px;
+}
+.flexbox li{
+    list-style: none;
+    width: 100%;
+    margin: 10px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+#logo{
+    font-size:clamp(0.8rem, 2vw, 4rem);
+    font-weight: bold;
+}
+
+footer{
+    margin: 0;
+    height: 100px;
+    width:100%;
+    background: black;
+    color: white;
+    position: relative;
+    bottom: 0;
+    text-align: right;
+}
+
+p#end{
+    position: relative;
+    top: 15px;
+    margin-right: 15px;
+}
+
+
+.corps ul{
+    display: flex;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    margin-left: 5%;
+    margin-right: 5%;
+    border-bottom: 4px solid black;
+}
+.corps li{
+    font-size:clamp(0.5rem, 2vw, 1.2rem);
+    font-weight: bold;
+    list-style: none;
+    width: 90%;
+    margin: 10px;
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+@keyframes slideRight {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0%);
+    }
+}
+
+.marque{
+    width:20vw;
+}
+.marque ul{
+    display: block;
+    border: 0;
+    margin-left: 0;
+}
+.marque li{
+    display: block;
+    position: relative;
+    height: 20vh;
+    width: 20vw;
+    margin: 0;
+    margin-top: 10px;
+    border: 2px solid black;
+    box-shadow: 1px 1px 4px black;
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-position: center;
+    overflow: hidden;
+}
+
+.marque ul a:first-child li{
+    background-image: url("/Pictures/Rolex/Rolex-Logo.png");
+}
+
+.marque ul a:nth-child(2) li{
+    background-image: url("/Pictures/AP/RoyalOak1972-removebg-preview.png");
+}
+
+.marque ul a:nth-child(3) li{
+    background-image: url("/Pictures/AP/RoyalOak1972-removebg-preview.png");
+}
+
+.marque p{
+    height: 4vh;
+    background-color: rgba(53, 53, 53, 0.334);
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+    box-shadow: 0px -1px 4px 1px black;
+    position: relative;
+    top: 16vh;
+    font-size: clamp(0.6rem, 1.5vw, 1.2rem);
+}
+p.description{
+    box-shadow: none;
+    height:10vh;
+    font-size: clamp(0.5rem, 1.5vw, 0.8rem);
+    text-align: justify;
+    padding-left: 3%;
+    padding-right: 3%;
+    color: white;
+}
+.marque a{
+    color: white;
+}
+
+.marque h2{
+    text-align: center;
+    display: none;
+}
+
+.marque li:hover p {
+    transition: all ease-out 0.4s;
+    top: 10vh;
+}
+
+.actus{
+    width:20vw;
+}
+.actus ul{
+    display: block;
+    border: 0;   
+    margin-left: 0;
+}
+.actus li{
+    display: block;
+    position: relative;
+    height: 20vh;
+    width: 20vw;
+    margin: 0;
+    margin-top: 10px;
+    border: 2px solid black;
+    box-shadow: 1px 1px 4px black;
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-position: center;
+}
+
+.actus ul a:first-child li{
+    background-image: url("/Pictures/Rolex/Rolex-Logo.png");
+}
+
+.actus ul a:nth-child(2) li{
+    background-image: url("/Pictures/AP/RoyalOak1972-removebg-preview.png");
+}
+
+.actus ul a:nth-child(3) li{
+    background-image: url("/Pictures/AP/RoyalOak1972-removebg-preview.png");
+}
+
+.actus p{
+    height: 4vh;
+    background-color: rgba(53, 53, 53, 0.334);
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+    box-shadow: 0px -1px 4px 1px black;
+    position: relative;
+    top: 16vh;
+    font-size: clamp(0.6rem, 1.5vw, 1.2rem);
+}
+
+.actus a{
+    color: white;
+}
+
+.actus h2{
+    text-align: center;
+    display: none;
+}
+
+.apropos{
+    width:20vw;
+}
+.apropos ul{
+    display: block;
+    border: 0;
+    margin-left: 0;
+}
+.apropos li{
+    display: block;
+    position: relative;
+    margin: 0;
+    margin-top: 10px;
+    height: 20vh;
+    width: 20vw;
+    border: 2px solid black;
+    box-shadow: 1px 1px 4px black;
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-position: center;
+}
+
+.apropos ul a:first-child li{
+    background-image: url("/Pictures/Rolex/Rolex-Logo.png");
+}
+
+.apropos ul a:nth-child(2) li{
+    background-image: url("/Pictures/AP/RoyalOak1972-removebg-preview.png");
+}
+
+.apropos ul a:nth-child(3) li{
+    background-image: url("/Pictures/AP/RoyalOak1972-removebg-preview.png");
+}
+
+.apropos p{
+    height: 4vh;
+    background-color: rgba(53, 53, 53, 0.334);
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+    box-shadow: 0px -1px 4px 1px black;
+    position: relative;
+    top: 16vh;
+    font-size: clamp(0.6rem, 1.5vw, 1.2rem);
+}
+
+.apropos a{
+    color: white;
+}
+
+.apropos h2{
+    text-align: center;
+    display: none;
+}
+
+.colonne{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+@media screen and (max-width:500px){
+    .presentation li{
+        display: none;
+    }
+
+    .colonne{
+        display: block;
+        width: 100%;
+    }
+
+    .marque{
+        width: 80vw;
+        margin: auto;
+    }
+    .marque li{
+        height: 50vh;
+        width: 80vw;
+    }
+    .marque p{
+        height: 10vh;
+        top: 40vh;
+        font-size: clamp(0.6rem, 5vw, 1.5rem);
+    }
+    .marque h2{
+        display: block;
+    }
+
+    p.description{
+        height: 15vh;
+    }
+    .marque li:hover p {
+        top: 25vh;
+    }
+    
+    .actus{
+        width: 80vw;
+        margin: auto;
+    }
+    .actus li{
+        height: 50vh;
+        width: 80vw;
+    }
+    .actus p{
+        height: 10vh;
+        top: 40vh;
+        font-size: clamp(0.6rem, 5vw, 1.5rem);
+    }
+    .actus h2{
+        display: block;
+    }
+
+    .apropos{
+        width: 80vw;
+        margin: auto;
+    }
+    .apropos li{
+        height: 50vh;
+        width: 80vw;
+    }
+    .apropos p{
+        height: 10vh;
+        top: 40vh;
+        font-size: clamp(0.6rem, 5vw, 1.5rem);
+    }
+
+    .apropos h2{
+        display: block;
+    }
+}
+
+.flexbox li:nth-child(even){
+    display: none;
+}
+@media (max-width:370px){
+    .flexbox li:nth-child(odd){
+        display: none;
+    }
+    .flexbox li:nth-child(even){
+        display: flex;
+        font-size: 1.5rem;
+    }
+>>>>>>> 9d1c38eb6f3d688e90cc12ce74e0f17e9f35f1f8
 }
