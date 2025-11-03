@@ -1,0 +1,6 @@
+/----------------------RAPPEL DES TACHES A FAIRE --------------------------/
+1- Responsive pour téléphone --Continuer cette tache pour le reste
+2- Repenser le style du site jusqu'à être satisfait -- Pareil on continue ca : prochaine page = resume.css
+2- Newsletter (sql et php)
+3- Remplir le excel tracking sheet
+3-Ajouter des news / petit récap
