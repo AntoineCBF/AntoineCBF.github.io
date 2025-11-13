@@ -1,4 +1,4 @@
-var ws = new WebSocket('wss://ctf15.root-me.org/ws');
+var ws = new WebSocket('ws://ctf09.root-me.org/ws');
 ws.onopen = function() {
     ws.send("hello");
 };
